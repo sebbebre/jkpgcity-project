@@ -5,7 +5,7 @@ const fs = require("fs");
 const app = express();
 app.use(cors());
 
-app.get("/", (req, res) => {
+app.get("/stores", (req, res) => {
 
     const data = fs.readFileSync("../database/stores.json");
 
