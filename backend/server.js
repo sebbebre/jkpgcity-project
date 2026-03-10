@@ -18,13 +18,6 @@ app.get("/stores", (req, res) => {
 });
 
 
-app.get("/", (req, res) => {
-
-    const data = fs.readFileSync("../database/stores.json");
-    const stores = JSON.parse(data);
-
-
-});
 
 app.listen(3000, () => {
     console.log("Server running on port 3000");
