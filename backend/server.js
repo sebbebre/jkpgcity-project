@@ -23,7 +23,6 @@ app.get("/", (req, res) => {
     const data = fs.readFileSync("../database/stores.json");
     const stores = JSON.parse(data);
 
-    res.json(stores);
 
 });
 
